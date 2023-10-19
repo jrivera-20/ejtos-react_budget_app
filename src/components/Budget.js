@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const Budget = () => {
-  const { budget, dispatch, expenses } = useContext(AppContext);
+  const { budget, dispatch, expenses, currency } = useContext(AppContext); // Destructure currency from context
 
   const changeBudget = val => {
     const totalExpenses = expenses.reduce((total, item) => {
@@ -22,8 +22,8 @@ const Budget = () => {
   return (
     <div className="alert alert-secondary">
       <label>
-        Budget: 
-		<input
+        Budget: {currency} 
+        <input
           type="number"
           step="10"
           value={budget}

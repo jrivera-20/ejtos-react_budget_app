@@ -1,0 +1,17 @@
+#currency {
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    background-color: #90EE90; /* Set the background color */
+    color: white; /* Set the text color */
+  }
+  
+
+  #currency option {
+    background-color: #90EE90;
+    color: black; 
+  }
+  
+ 
+  #currency::-ms-expand {
+    display: none; 
+  }
